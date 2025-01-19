@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Suggestion</title>
+  <link rel="stylesheet" href="styleshealth.css" type=""text/css>
+  
+</head>
+<body>
+  <header>
+    <img src="Sanjeevani-Logo-New.v1.jpg" style="width: 60%;">
+    <h1> Health Assistant</h1>
+    <p>Select a condition to get suggestions for medicine, diet, and care.</p>
+  </header>
+  <main>
+    <section class="form-section">
+      <label for="condition">Choose a Condition:</label>
+      <select id="condition">
+        <option value="" disabled selected>Select...</option>
+        <option value="cold">Common Cold</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="hypertension">Hypertension</option>
+        <option value="Headache">Headache</option>
+        <option value="Stomachache">Stomach ache</option>
+        <option value="Whooping cough">Whooping cough</option>
+        <option value="Pneumonia">Pneumonia</option>
+        <option value="Dangue">Dangue</option>
+        <option value="Malaria">Malaria</option>
+        <option value="Aids">Aids</option>
+        <option value="">Headache</option>
+
+      </select>
+      <button id="submit">Get Suggestions</button>
+    </section>
+    <section id="result" class="result-section hidden">
+      <h2>Suggestions</h2>
+      <div id="medicine">
+        <h3>Medicine</h3>
+        <p id="medicine-info"></p>
+      </div>
+      <div id="diet">
+        <h3>Diet</h3>
+        <p id="diet-info"></p>
+      </div>
+      <div id="care">
+        <h3>Care</h3>
+        <p id="care-info"></p>
+      </div>
+      <div id="Home Remidies">
+        <h3>Home Remedies</h3>
+        <p id="remedies-info"></p>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="health.js"></script>
+</body>
+</html>
